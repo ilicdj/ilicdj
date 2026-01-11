@@ -161,7 +161,6 @@ export default class Sketch {
       this.setupScene();
       this.setupCamera();
       this.setupRenderer();
-      this.setupControls();
       this.addObjects();
       this.loadTexture(options.imageUrl || '/soon_to_be_portfolio.png');
       this.resize();
@@ -271,10 +270,6 @@ export default class Sketch {
     }
   }
 
-  private setupControls(): void {
-    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.controls.enableDamping = true;
-  }
 
   private addObjects(): void {
     const geometry = new THREE.PlaneGeometry(1, 1, 64, 64);
@@ -375,7 +370,6 @@ export default class Sketch {
     
     uniforms.uWindStrength.value = gust * this.windForce * 0.3;
 
-    this.controls.update();
     this.renderer.render(this.scene, this.camera);
   };
 
