@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "1.12.1",
+    "@nuxt/fonts": "0.12.1",
+    "@nuxt/hints": "1.0.0-alpha.5",
+    "@nuxt/image": "2.0.0",
+    "@types/three": "^0.182.0",
+    "eslint": "^9.39.2",
+    "lil-gui": "^0.21.0",
+    "nuxt": "^4.2.2",
+    "three": "^0.182.0",
+    "vite-plugin-glsl": "^1.5.5",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  }
+}
