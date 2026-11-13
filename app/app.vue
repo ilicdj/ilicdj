@@ -9,6 +9,6 @@ useHead({
 
 <template>
   <div>
-    <legend style="font-family: monospace">testing</legend>
+    <legend style="font-family: monospace">testing november friday 13</legend>
   </div>
 </template>
